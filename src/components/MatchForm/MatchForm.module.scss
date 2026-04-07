@@ -1,0 +1,100 @@
+@use '../../styles/variables.scss' as *;
+
+@keyframes borderPulse {
+    from {
+        box-shadow: 0 0 0 0px $color-brand;
+    }
+    to {
+        box-shadow: 0 0 0 3px $color-brand;
+    }
+}
+
+.brd-match-questionnaire__wrapper {
+    display: grid;
+    grid-template-rows: min-content auto;
+}
+
+.brd-match-questionnaire__content {
+    display: flex;
+    justify-content: center;
+}
+
+.brd-match-questionnaire__section {}
+
+.brd-match-questionnaire__section-title {
+    color: $color-brand;
+    font-family: $font-title;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.brd-match-questionnaire__section-options {
+    border: 0;
+}
+
+.brd-match-questionnaire__section-option-wrapper {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+    input {
+        display: none;
+    }
+
+    label {
+        background-color: $color-brand;
+        color: $color-white;
+        display: flex;
+        padding: 20px;
+        border-radius: 10px;
+    }
+}
+
+.brd-match-questionnaire__section-option {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.brd-match-questionnaire__summary {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+
+    span {
+        display: flex;
+        font-size: 2rem;
+        transition: color 0.3s ease;
+
+        &.completed {
+            color: $color-brand;
+        }
+    }
+
+    button {
+        background-color: $color-white;
+        border: 2px solid $color-brand;
+        border-radius: 50%;
+        color: $color-brand;
+        font-family: $font-title;
+        font-size: 2rem;
+        height: 100px;
+        line-height: 2;
+        transition: width .3s ease-in-out, height .3s ease-in-out, font-size .3s ease-in-out;
+        width: 100px;
+
+        &.completed {
+            animation: borderPulse 1s ease-in-out infinite alternate;
+            font-size: 4rem;
+            height: 200px;
+            width: 200px;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,49 @@
+@use './variables.scss' as *;
+
+%activity-list {
+    .brd-activity-list__element-title {
+        margin-bottom: 15px;
+    }
+
+    .brd-activity-list__element-description {
+        margin-bottom: 10px;
+    }
+
+    .brd-activity-list__element-status {
+        border-radius: 10px;
+        color: $color-white;
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        padding: 5px;
+        text-transform: uppercase;
+        width: fit-content;
+
+        &--in-progress {
+            background-color: $color-in-progress;
+        }
+
+        &--to-do {
+            background-color: $color-to-do;
+        }
+
+        &--completed {
+            background-color: $color-completed;
+        }
+    }
+
+    .brd-activity-list__element-details {
+        display: flex;
+        font-size: 1.8rem;
+        justify-content: flex-end;
+        gap: 5px;
+        margin-top: 20px;
+    }
+
+    .brd-activity-list__element-duration {
+        align-items: center;
+        column-gap: 3px;
+        display: flex;
+        justify-content: center;
+    }
+}

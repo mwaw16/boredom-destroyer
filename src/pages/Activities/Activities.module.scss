@@ -1,0 +1,5 @@
+@use '../../styles/placeholders.scss' as *;
+
+.brd-activity-list__element-wrapper {
+    @extend %activity-list;
+}

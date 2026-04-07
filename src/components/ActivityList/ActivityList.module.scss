@@ -1,0 +1,21 @@
+@use '../../styles/variables.scss' as *;
+
+.brd-activity-list {
+    padding-inline: 10px;
+}
+
+.brd-activity-list__content {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 10px;
+    row-gap: 20px;
+}
+
+.brd-activity-list__element {
+    border-radius: 10px;
+    background-color: $color-light-gray;
+    padding: 15px;
+}

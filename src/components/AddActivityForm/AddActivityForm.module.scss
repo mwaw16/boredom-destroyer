@@ -1,0 +1,107 @@
+@use '../../styles/variables.scss' as *;
+
+.brd-add-activity-form__overlay {
+    align-items: center;
+    background-color: rgba($color-black, 0.5);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.brd-add-activity-form {
+    background-color: $color-white;
+    border: 1px solid $color-brand;
+    border-radius: 20px;
+    font-family: $font-default;
+    min-width: min(80%, 400px);
+    padding: 35px 20px 20px;
+    position: relative;
+}
+
+.brd-add-activity-form__title {
+    color: $color-brand;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.brd-add-activity-form__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.brd-add-activity-form__input {
+    border: 1px solid $color-brand;
+    font-family: $font-default;
+    padding: 10px;
+}
+
+.brd-add-activity-form__textarea {
+    border: 1px solid $color-brand;
+    font-family: $font-default;
+    padding: 10px;
+}
+
+.brd-add-activity-form__fieldset {
+    border: 1px solid $color-brand;
+    padding: 10px;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+}
+
+.brd-add-activity-form__options {}
+
+.brd-add-activity-form__option {
+    display: flex;
+    row-gap: 5px;
+}
+
+.brd-add-activity-form__submit {
+    background-color: $color-brand;
+    border: none;
+    border-radius: 10px;
+    color: $color-white;
+    font-family: $font-default;
+    font-size: 1.6rem;
+    margin-inline: auto;
+    padding: 10px 20px;
+    width: fit-content;
+}
+
+.brd-add-activity-form__close-button {
+    background-color: transparent;
+    border: none;
+    color: $color-gray;
+    font-family: $font-default;
+    font-size: 1.4rem;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+}
+

@@ -1,0 +1,14 @@
+@use '../../styles/placeholders.scss' as *;
+@use '../../styles//variables.scss' as *;
+
+.brd-activity-list__element-wrapper {
+    @extend %activity-list;
+}
+
+.brd-activity-list__element-score {
+    color: $color-brand;
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}

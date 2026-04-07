@@ -1,0 +1,25 @@
+@use '../../styles/variables' as *;
+
+.brd-configuration-chips__wrapper {
+    display: grid;
+    grid-template-columns: auto min-content;
+}
+
+.brd-configuration-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: min-content;
+    padding-bottom: 25px;
+}
+
+.brd-configuration-chips__chip {
+    align-items: center;
+    // background-color: $color-brand;
+    border: 1px solid $color-brand;
+    border-radius: 10px;
+    column-gap: 5px;
+    display: flex;
+    color: $color-brand;
+    padding: 8px;
+}

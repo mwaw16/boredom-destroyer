@@ -1,0 +1,229 @@
+{
+  "activities": [
+    {
+      "id": "a1f9xk3p",
+      "title": "Przeczytać 30 stron książki „Atomowe Nawyki”",
+      "description": "Nadrobienie zaległości w czytaniu i wdrożenie jednego małego nawyku w życie.",
+      "estimatedDuration": 45,
+      "involvementLevel": 2,
+      "type": "mental",
+      "status": "in progress"
+    },
+    {
+      "id": "b7lm2q9z",
+      "title": "Zaktualizować arkusz finansowy w Excelu",
+      "description": "Wprowadzenie ostatnich wydatków i analiza budżetu miesięcznego.",
+      "estimatedDuration": 40,
+      "involvementLevel": 2,
+      "type": "mental",
+      "status": "completed"
+    },
+    {
+      "id": "c4tn8v1r",
+      "title": "Pomalować przedpokój",
+      "description": "Odświeżenie ścian i poprawienie estetyki mieszkania.",
+      "estimatedDuration": 180,
+      "involvementLevel": 3,
+      "type": "physical",
+      "status": "to do"
+    },
+    {
+      "id": "d9kp3w6y",
+      "title": "Skosić trawę w ogrodzie",
+      "description": "Uporządkowanie trawnika wokół domu.",
+      "estimatedDuration": 60,
+      "involvementLevel": 2,
+      "type": "physical",
+      "status": "to do"
+    },
+    {
+      "id": "e2mz7h4u",
+      "title": "Posprzątać garaż",
+      "description": "Posegregowanie narzędzi i wyrzucenie niepotrzebnych rzeczy.",
+      "estimatedDuration": 120,
+      "involvementLevel": 3,
+      "type": "physical",
+      "status": "to do"
+    },
+    {
+      "id": "f6qx1n8b",
+      "title": "Zrobić porządek w mailach",
+      "description": "Usunięcie zbędnych wiadomości i uporządkowanie folderów.",
+      "estimatedDuration": 50,
+      "involvementLevel": 1,
+      "type": "mental",
+      "status": "to do"
+    },
+    {
+      "id": "g3rv9t2c",
+      "title": "Ułożyć plan treningowy na najbliższy miesiąc",
+      "description": "Rozpisanie celów i jednostek treningowych.",
+      "estimatedDuration": 35,
+      "involvementLevel": 2,
+      "type": "mental",
+      "status": "to do"
+    },
+    {
+      "id": "h8zw4m1s",
+      "title": "Naprawić cieknący kran",
+      "description": "Wymiana uszczelki i sprawdzenie szczelności instalacji.",
+      "estimatedDuration": 30,
+      "involvementLevel": 2,
+      "type": "physical",
+      "status": "to do"
+    },
+    {
+      "id": "i5pl0k7d",
+      "title": "Zrobić backup zdjęć z telefonu",
+      "description": "Zarchiwizowanie zdjęć w chmurze i na dysku zewnętrznym.",
+      "estimatedDuration": 25,
+      "involvementLevel": 1,
+      "type": "mental",
+      "status": "to do"
+    },
+    {
+      "id": "j1vx6n3q",
+      "title": "Przejrzeć i zaktualizować CV",
+      "description": "Dodanie nowych umiejętności i projektów.",
+      "estimatedDuration": 45,
+      "involvementLevel": 2,
+      "type": "mental",
+      "status": "to do"
+    },
+    {
+      "id": "k7bd2s9l",
+      "title": "Przesadzić kwiaty w salonie",
+      "description": "Zmiana doniczek i uzupełnienie świeżej ziemi.",
+      "estimatedDuration": 35,
+      "involvementLevel": 2,
+      "type": "physical",
+      "status": "to do"
+    },
+    {
+      "id": "l4qy8p2t",
+      "title": "Zrobić przegląd subskrypcji online",
+      "description": "Sprawdzenie aktywnych usług i anulowanie zbędnych.",
+      "estimatedDuration": 20,
+      "involvementLevel": 1,
+      "type": "mental",
+      "status": "to do"
+    },
+    {
+      "id": "m9hk3v6x",
+      "title": "Ułożyć segregator z dokumentami",
+      "description": "Posegregowanie rachunków i umów w jednym miejscu.",
+      "estimatedDuration": 70,
+      "involvementLevel": 2,
+      "type": "mental",
+      "status": "to do"
+    },
+    {
+      "id": "n2tc7r5w",
+      "title": "Wyczyścić samochód w środku",
+      "description": "Odkurzenie wnętrza i przetarcie plastików.",
+      "estimatedDuration": 60,
+      "involvementLevel": 2,
+      "type": "physical",
+      "status": "to do"
+    },
+    {
+      "id": "o6ps1m8z",
+      "title": "Nauczyć się podstaw React Query",
+      "description": "Przejście tutoriala i wdrożenie przykładu w projekcie.",
+      "estimatedDuration": 90,
+      "involvementLevel": 3,
+      "type": "mental",
+      "status": "to do"
+    },
+    {
+      "id": "p3wr9k2u",
+      "title": "Zorganizować foldery na komputerze",
+      "description": "Uporządkowanie plików projektowych i archiwizacja starych.",
+      "estimatedDuration": 55,
+      "involvementLevel": 2,
+      "type": "mental",
+      "status": "to do"
+    },
+    {
+      "id": "q8mv4t1n",
+      "title": "Przejrzeć plan budowy domu",
+      "description": "Sprawdzenie kolejnych etapów i przygotowanie pytań do wykonawcy.",
+      "estimatedDuration": 40,
+      "involvementLevel": 2,
+      "type": "mental",
+      "status": "to do"
+    },
+    {
+      "id": "r5kx0v7p",
+      "title": "Zrobić generalne porządki w kuchni",
+      "description": "Wyczyszczenie szafek i wyrzucenie przeterminowanych produktów.",
+      "estimatedDuration": 100,
+      "involvementLevel": 3,
+      "type": "physical",
+      "status": "to do"
+    },
+    {
+      "id": "s1nt6q4y",
+      "title": "Rozpisać cele roczne",
+      "description": "Zdefiniowanie celów zawodowych, finansowych i prywatnych.",
+      "estimatedDuration": 60,
+      "involvementLevel": 3,
+      "type": "mental",
+      "status": "to do"
+    },
+    {
+      "id": "t7zl3m8k",
+      "title": "Zrobić 30-minutową sesję mobilizacji",
+      "description": "Ćwiczenia rozciągające i poprawiające zakres ruchu.",
+      "estimatedDuration": 30,
+      "involvementLevel": 2,
+      "type": "physical",
+      "status": "to do"
+    },
+    {
+      "id": "",
+      "title": "",
+      "description": "",
+      "estimatedDuration": 0,
+      "involvementLevel": 1,
+      "type": "mental",
+      "status": "to do"
+    },
+    {
+      "id": "b4ac",
+      "title": "test",
+      "description": "kldjdfkls",
+      "estimatedDuration": 45,
+      "involvementLevel": 2,
+      "type": "physical",
+      "status": "to do"
+    },
+    {
+      "id": "cb38",
+      "title": "cycki",
+      "description": "dklsjdfskldjdfkls",
+      "estimatedDuration": 145,
+      "involvementLevel": 1,
+      "type": "mental",
+      "status": "to do"
+    },
+    {
+      "id": "9225",
+      "title": "dlkajdk",
+      "description": "dsfldjsf",
+      "estimatedDuration": 45,
+      "involvementLevel": 1,
+      "type": "mental",
+      "status": "to do"
+    },
+    {
+      "id": "eda0",
+      "title": "jdsfh",
+      "description": "kldfsjfd",
+      "estimatedDuration": 77,
+      "involvementLevel": 2,
+      "type": "physical",
+      "status": "to do"
+    }
+  ]
+}
