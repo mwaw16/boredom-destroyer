@@ -1,4 +1,4 @@
-import { useState, useEffect, useReducer } from 'react';
+import { useState, useEffect, useReducer, useMemo } from 'react';
 import type { ReactNode } from 'react';
 import { ActivityContext } from './ActivityContext';
 import type { Activity } from '../../types/activityJson';
@@ -51,6 +51,8 @@ export const ActivityProvider = ({ children }: { children: ReactNode }) => {
 
 
     const activitiesWithRank = () => {
+        console.log('ACTIVITIES WITH RANK CALLED');
+
         const config = {
             max: 100,
             time: {
@@ -103,7 +105,7 @@ export const ActivityProvider = ({ children }: { children: ReactNode }) => {
         });
     }
 
-    const rankedActivities = activitiesWithRank();
+    const rankedActivities = useMemo(() => activitiesWithRank(), [state.activities, formState]);
 
     //dispatch functions
     const setActivities = (activities: Activity[] | ((prev: Activity[]) => Activity[])) => {
@@ -180,35 +182,35 @@ export const ActivityProvider = ({ children }: { children: ReactNode }) => {
     }, []);
 
     useEffect(() => {
-    if (!newActivity) return;
+        if (!newActivity) return;
 
-    const controller = new AbortController();
+        const controller = new AbortController();
 
-    const postData = async () => {
-        setIsPending(true);
-        try {
-            const response = await fetch('http://localhost:3000/activities', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(newActivity),
-                signal: controller.signal
-            });
+        const postData = async () => {
+            setIsPending(true);
+            try {
+                const response = await fetch('http://localhost:3000/activities', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(newActivity),
+                    signal: controller.signal
+                });
 
-            if (!response.ok) throw new Error(`Response status: ${response.status}`);
-            const json = await response.json();
-            setActivities(prev => [...prev, json]);
-        } catch (err) {
-            if ((err as any).name !== 'AbortError') console.error(err);
-        } finally {
-            setIsPending(false);
-            console.log('post sent');
-        }
-    };
+                if (!response.ok) throw new Error(`Response status: ${response.status}`);
+                const json = await response.json();
+                setActivities(prev => [...prev, json]);
+            } catch (err) {
+                if ((err as any).name !== 'AbortError') console.error(err);
+            } finally {
+                setIsPending(false);
+                console.log('post sent');
+            }
+        };
 
-    postData();
+        postData();
 
-    return () => controller.abort();
-}, [newActivity]);
+        return () => controller.abort();
+    }, [newActivity]);
 
 
     // Funkcja do wysyłania POST (można ją wystawić w kontekście, jeśli trzeba)

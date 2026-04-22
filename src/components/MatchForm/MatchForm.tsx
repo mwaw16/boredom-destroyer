@@ -1,11 +1,10 @@
-import { useContext } from 'react';
-import { ActivityContext } from '../../context/Activity/ActivityContext';
+import { useActivityContext } from '../../hooks/useActivityContext';
 
 import styles from './MatchForm.module.scss';
 
 export default function MatchForm() {
 
-    const { formState, setTime, setInvolvementLevel, setType, setIsListVisible } = useContext(ActivityContext) || {};
+    const { formState, setTime, setInvolvementLevel, setType, setIsListVisible } = useActivityContext();
     const { time, involvementLevel, type } = formState || {};
 
     const factorsCount = Object.keys(formState).length;

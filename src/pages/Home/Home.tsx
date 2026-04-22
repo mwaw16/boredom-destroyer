@@ -1,6 +1,4 @@
-// import { useState } from 'react';
-import { useContext } from 'react';
-import { ActivityContext } from '../../context/Activity/ActivityContext';
+import { useActivityContext } from '../../hooks/useActivityContext';
 
 import MatchButton from '../../components/MatchButton/MatchButton';
 import MatchForm from '../../components/MatchForm/MatchForm';
@@ -13,10 +11,7 @@ import styles from './Home.module.scss';
 
 export default function Home() {
 
-const context = useContext(ActivityContext);
-const { isFormVisible, setIsFormVisible } = context || {};
-
-const { rankedActivities, isListVisible } = context || {};
+const { isFormVisible, setIsFormVisible, rankedActivities, isListVisible } = useActivityContext();
 
 const setStatusClass = (status: string) => {
     return status.replace(/\s+/g, '-');
@@ -29,8 +24,6 @@ const handleButtonClick = () => {
 }
 
 const mappedRankedActivities = rankedActivities?.filter(act => act.status !== 'completed').sort((a, b) => b.ranks.overallRank - a.ranks.overallRank);
-
-console.log(mappedRankedActivities, 'mapped');
 
     return (
         <>

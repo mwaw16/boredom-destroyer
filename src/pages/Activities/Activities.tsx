@@ -1,22 +1,14 @@
-import { useContext } from 'react';
 import ActivityList from '../../components/ActivityList/ActivityList';
-import { ActivityContext } from '../../context/Activity/ActivityContext';
+import { useActivityContext } from '../../hooks/useActivityContext';
 
 import styles from './Activities.module.scss';
 
 export default function Activities() {
-    const context = useContext(ActivityContext);
-
-    if (context === undefined) {
-        console.error('Activity Context is not available');
-    }
-
-    const { activities } = context || {};
+    const { activities } = useActivityContext();
 
     const setStatusClass = (status: string) => {
         return status.replace(/\s+/g, '-');
     }
-
 
     return (
         <ActivityList

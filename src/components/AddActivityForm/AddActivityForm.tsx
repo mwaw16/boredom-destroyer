@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import { useContext } from 'react';
-import { ActivityContext } from '../../context/Activity/ActivityContext';
+import { useActivityContext } from '../../hooks/useActivityContext';
 
 import type { Activity } from '../../types/activityJson';
 
@@ -10,13 +9,7 @@ import styles from './AddActivityForm.module.scss';
 export default function AddActivityForm({ onClose, isOpen }: { onClose: () => void, isOpen: boolean }) {
     const nodeRef = useRef(null);
 
-    const context = useContext(ActivityContext);
-
-    if (!context) {
-        throw new Error('Activity Context is not available');
-    }
-
-    const { setNewActivity } = context;
+    const { setNewActivity } = useActivityContext();
 
     const defaultFormData: Activity = {
         title: '',
