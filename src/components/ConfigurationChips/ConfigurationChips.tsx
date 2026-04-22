@@ -1,5 +1,4 @@
-import { useContext } from 'react';
-import { ActivityContext } from '../../context/Activity/ActivityContext';
+import { useActivityContext } from '../../hooks/useActivityContext';
 
 import type { FormState } from '../../types/reducerTypes';
 
@@ -13,13 +12,7 @@ export default function ConfigurationChips() {
         label: string;
     };
 
-    const context = useContext(ActivityContext);
-
-    if (!context) {
-        throw new Error('Activity Context is not available');
-    }
-
-    const { formState, setResetForm, setIsFormVisible, setIsListVisible } = context;
+    const { formState, setResetForm, setIsFormVisible, setIsListVisible } = useActivityContext();
 
     const formStateMapper: FormStateMapperType[] = [
         {
